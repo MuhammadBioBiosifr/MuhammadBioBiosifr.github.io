@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Variabel Masukan</title>
+</head>
+<body>
+<script language="javascript">
+function cekNama(form){
+if(form.elements[0].value==""){
+alert("Nama harus dimasukan");
+form.nama.focus();
+form.nama.select();
+return(false);
+}
+alert("Terima kasih,"+
+form.elements[0].value);
+return(true);
+}
+</script>
+<FORM NAME="formku">
+<PRE>
+Nama:<input type="text" name="nama"><BR>
+<INPUT TYPE="BUTTON"
+VALUE="kirim"
+onClick=
+"cekNama(this.form)"><BR>
+</PRE>
+</FORM>
+</body>
+</html>
